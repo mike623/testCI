@@ -7,11 +7,11 @@ node_js:
 
 before_install:
 - curl https://install.meteor.com/ | sh
-- npm install -g mup
+# - npm install -g mup
 
-- openssl aes-256-cbc -K $encrypted_328fda7e6827_key -iv $encrypted_328fda7e6827_iv
-  -in secrets.tar.enc -out secrets.tar -d  # Decrypt secrets.tar.enc
-- tar xvf secrets.tar # Decompress secrets.tar
+# - openssl aes-256-cbc -K $encrypted_328fda7e6827_key -iv $encrypted_328fda7e6827_iv
+  # -in secrets.tar.enc -out secrets.tar -d  # Decrypt secrets.tar.enc
+# - tar xvf secrets.tar # Decompress secrets.tar
 services: mongodb
 
 script:
