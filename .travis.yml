@@ -15,8 +15,9 @@ before_install:
 services: mongodb
 
 script:
-- iron --test  --release velocity:METEOR@1.2.0.1_1
+- pwd
+- meteor --test  --release velocity:METEOR@1.2.0.1_1
 after_success:
-- iron deploy testCIByMike.meteor.com
+- meteor deploy testCIByMike.meteor.com
 # - mup deploy
 #- curl -L http://git.io/vqbln | sh
